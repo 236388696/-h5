@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>目标伪类选择器</title>
+	<style type="text/css">
+		/* .wrap{ width:600px; border:1px solid #333; margin: 0 auto; }
+		:target{background:#ff0;} 
+		input:enabled{background: #00f;}
+		input:disabled{background: #333;}
+		input:checked+label{color:#f00;}
+		.text::selection{background:#ff0;}
+		label{display: block; width:60px; height: 30px; background: #666; position: relative; border-radius: 15px;}
+		label:after{content:""; display: block; width:30px; height: 30px; background: #0f0; position: absolute;left:0; top:0; transition: 0.5s; border-radius:50%;}
+		input:checked+label:after{left:30px; background: #f00;}
+		input{display:  none;}
+		li:not(:nth-child(odd)){width:500px; height: 30px; background:#f00;}
+		input:focus{background:#0d0; transition:.5s;}
+		.box{width:0; height: 0; border-top:10px solid #333; border-left:5px solid transparent;border-right:5px solid transparent; transition: .2s;}
+		.box:hover{border-left:10px solid #333; border-top:5px solid transparent;border-bottom:5px solid transparent;}*/
+		.box1{
+			width:500px;
+			margin:0 auto;
+		}
+		.box1 a{
+			display: block;
+			height:50px;
+			background:blue;
+			list-style: 50px;
+			color: #fff; 
+			font-weight: bold;
+
+		}
+		p{height:0; overflow: hidden ; transition: .5s;}
+		:target p{height:100px; overflow: auto;}
+		.box1 h2{position: relative;}
+		.box1 h2:after{content: ""; display: block; width:0; height: 0; border-top:10px solid #fff; border-left:5px solid transparent; border-right: 5px solid transparent; position: absolute; top:10px; right:10px;}
+		:target h2:after{border-left:10px solid #fff; border-top:5px solid transparent; border-bottom: 5px solid transparent;}
+			
+	</style>
+		}
+		
+		
+</head>
+<body>
+<div class="box1"  id="text2">
+	<h2><a href="#text2">beound</a></h2>
+	<p>应用物理学专业的毕业生主要在物理学或相关的科学技术领域中从事科研、教学、技术开发和相关的管理工作。科研工作包括物理前沿问题的研究和应用，技术开 发工作包括新特性物理应用材料如半导体等，应用仪器的研制如医学仪器、生物仪器、科研仪器等。应用物理专业的就业范围涵盖了整个物理和工程领域，融物理理</p>
+</div>
+<div class="box1">
+	<a href="#text3">beound</a>
+	<p id="text3">应用物理学专业的毕业生主要在物理学或相关的科学技术领域中从事科研、教学、技术开发和相关的管理工作。科研工作包括物理前沿问题的研究和应用，技术开 发工作包括新特性物理应用材料如半导体等，应用仪器的研制如医学仪器、生物仪器、科研仪器等。应用物理专业的就业范围涵盖了整个物理和工程领域，融物理理</p>
+</div>
+<div class="box1">
+	<a href="#text1">beound</a>
+	<p id="text1">应用物理学专业的毕业生主要在物理学或相关的科学技术领域中从事科研、教学、技术开发和相关的管理工作。科研工作包括物理前沿问题的研究和应用，技术开 发工作包括新特性物理应用材料如半导体等，应用仪器的研制如医学仪器、生物仪器、科研仪器等。应用物理专业的就业范围涵盖了整个物理和工程领域，融物理理</p>
+</div>
+
+
+<!--<ul>
+	<li>1111</li>
+	<li>2222</li>
+	<li>3333</li>
+	<li>4444</li>
+	<li>5555</li>
+</ul>
+ <input id="check" type="checkbox">
+<label  for="check"></label> -->
+<!-- <form action="">
+	<input type="text" >
+	<input type="text" disabled>
+	<input id="check" type="checkbox" checked><label for="check">提示文本</label>
+	<input type="checkbox" >
+	
+</form>
+<p class="text">1111111应用物理学专业的毕业生主要在物理学或相关的科学技术领域中从事科研、教学、技术开发和相关的管理工作。科研工作包括物理前沿问题的研究和应用，技术开 发工作包括新特性物理应用材料如半导体等，应用仪器的研制如医学仪器、生物仪器、科研仪器等。应用物理专业的就业范围涵盖了整个物理和工程领域，融物理理 论和实践于一体，并与多门学科相互渗透。
+应用物理学专业的学生如具有扎实的物理理论的功底和应用方面的经验，能够在很多工程技术领域成为专家。我国每年培养本科应用物理专业人才约12000人。和该专业存在交叉的专业包括物理专业，工程物理专业，半导体和材料专业等。人才需求方面，我国对应用物理专业的人才需求仍旧是供不应求。[5] </p> -->
+<!-- <div class="wrap">
+	<a href="#box1">新闻</a>
+	<a href="#box2">娱乐</a>
+	<a href="#box3">体育</a>
+	<p id="box1">1111111应用物理学专业的毕业生主要在物理学或相关的科学技术领域中从事科研、教学、技术开发和相关的管理工作。科研工作包括物理前沿问题的研究和应用，技术开 发工作包括新特性物理应用材料如半导体等，应用仪器的研制如医学仪器、生物仪器、科研仪器等。应用物理专业的就业范围涵盖了整个物理和工程领域，融物理理 论和实践于一体，并与多门学科相互渗透。
+应用物理学专业的学生如具有扎实的物理理论的功底和应用方面的经验，能够在很多工程技术领域成为专家。我国每年培养本科应用物理专业人才约12000人。和该专业存在交叉的专业包括物理专业，工程物理专业，半导体和材料专业等。人才需求方面，我国对应用物理专业的人才需求仍旧是供不应求。[5] </p>
+<p id="box2">22222222222222培养要求
+本专业在大学物理专科的基础上学习物理学的基础知识、基本理论，得到物理实验以及教育理论与实践的基本训练，初步具备进行物理学基本理论及其应用研究能力、从事物理教学和教学研究的基本能力。
+课程
+1、数学物理方法
+本课程内容包括复变函数论基础，傅立叶级数和傅立叶积分，数学物理方程的导出和定解问题、分离变量法、二阶常微分方程的级数解法及特殊函数
+2、理论力学
+理论力学是普通物理力学的延续课，包括质点力学、质点系力学、刚体力学、分析力学等。
+3、电动力学
+本课程内容包括真空和介质中的静电场和静磁场以及它们在两种介质分界面上的规律；变化的电磁场的激发和传播的规律；与电磁现象的参照系变换相联系的时空理论——狭义相对论。
+4、热力学与统计物理
+本课程内容包括热力学、统计物理学两部分。主要内容包括热力学基本定律，热力学函数及其应用，相平衡和化学平衡，不可逆过程热力学简介，概率论的基本知识，统计物理学的基本概念，玻耳兹曼统计分布律，量子统计，系统理论和涨落理论。
+5、量子力学
+本课程主要内容包括微观粒子的波粒二象性与德布罗意假设，波函数与薛定谔方程，力学量的算符表示，定态微扰论，电子自旋与全同粒子体系。</p>
+<p id="box3">3333333333333333333课程
+1、数学物理方法
+本课程内容包括复变函数论基础，傅立叶级数和傅立叶积分，数学物理方程的导出和定解问题、分离变量法、二阶常微分方程的级数解法及特殊函数
+2、理论力学
+理论力学是普通物理力学的延续课，包括质点力学、质点系力学、刚体力学、分析力学等。
+3、电动力学
+本课程内容包括真空和介质中的静电场和静磁场以及它们在两种介质分界面上的规律；变化的电磁场的激发和传播的规律；与电磁现象的参照系变换相联系的时空理论——狭义相对论。
+4、热力学与统计物理
+本课程内容包括热力学、统计物理学两部分。主要内容包括热力学基本定律，热力学函数及其应用，相平衡和化学平衡，不可逆过程热力学简介，概率论的基本知识，统计物理学的基本概念，玻耳兹曼统计分布律，量子统计，系统理论和涨落理论。
+5、量子力学
+本课程主要内容包括微观粒子的波粒二象性与德布罗意假设，波函数与薛定谔方程，力学量的算符表示，定态微扰论，电子自旋与全同粒子体系。
+6、近代物理实验
+本课程是物理学专业的一门重要的基础实验课程，所涉及的物理知识面广，并具有较强的综合性和技术性。
+7、物理教学论
+本课程主要内容包括中学物理教学的目的和任务、中学物理学科的内容和结构、中学物理教学过程的规律和特点、中学生物理学习的认知特点和心理特征、中学物理概念和规律的教学研究、中学物理教学测量与评价的理论与方法、中学物理教材分析等。[6] </p>
+</div> -->
+</body>
+</html>

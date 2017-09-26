@@ -1,0 +1,123 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{background: #f2f2f2;}
+body,html{height: 100%;overflow: hidden;}
+html{font-size: 31.25vw;}
+#content{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+header{
+	height: 2.41rem;
+	
+}
+.top{
+	height: 1.28rem;
+	background: #e02e24;
+	padding: 0.145rem;
+}
+.top ul{
+	display: flex;
+}
+.top ul li:nth-of-type(2){
+	padding-left: 0.145rem;
+	color: #fff;
+}
+.top ul li:nth-of-type(2) span{
+	font-size: 12px;
+	padding-top: 0.1rem;
+	color: #e5e5e5;
+}
+.top ul i{
+	display: block;
+	border: 0.01rem solid #ef9691;
+	width: 0.645rem;
+	height: 0.645rem;
+	border-radius: 50%;
+}
+.indent{
+	padding-left: 0.125rem;
+	background: #fff;
+}
+.indent p{
+	line-height: 0.44rem;
+	display: flex;
+	justify-content: space-between;
+	font-style: bold;
+}
+.indent p span{
+	color: #d9d9d9;
+	padding-right: 0.27rem;
+}
+.nav{
+	padding-left: 0.125rem;
+	background: #fff;
+}
+.nav ul{
+	padding-top: 0.155rem;
+	display: flex;
+	justify-content: space-around;
+	border-top: 1px solid #e0e0e0;
+}
+.nav ul li{
+	text-align: center;
+}
+.nav ul li i{
+	color: #9c9c9c;
+	font-size: 22px;
+}
+.nav ul li p{
+	line-height: 0.35rem;
+}
+nav{
+	height: 0.77rem;
+	background: #fff;
+	margin-top: 0.1rem;
+}
+nav ul{
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav ul li{
+	text-align: center;
+}
+nav ul li i{
+	font-size: 26px!important;
+	color: #1ecd16;
+}
+nav ul li:nth-of-type(2) i{
+	color: #fc6506;
+}
+nav ul li:nth-of-type(3) i{
+	color: #fd5046;
+}
+nav ul li:nth-of-type(4) i{
+	color: #ffc32a;
+}
+nav ul li p{
+	
+}
+section{
+	flex: 1;
+}
+footer{
+	height: 0.495rem;
+	background: #f9f9f9;
+}

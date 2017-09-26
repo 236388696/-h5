@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>定位</title>
+<style>
+*{
+	margin:0px;
+	padding:0px;
+	}
+	
+	.yi{
+			width:1000px;
+			height:30px;
+			background-color:red;
+			margin:20px auto 0px;
+			border:1px solid yellow;
+		
+			
+			
+			
+			}
+		.yi li{
+				width:150px;
+				height:30px;
+				background-color:gray;
+				border:1px solid yellow;
+				float:left;
+				line-height:30px;
+				text-align:center;
+				list-style:none;
+				}
+		
+		.one{
+			position:relative;}	
+		.er{
+			display:none;
+			position:absolute;
+			top:30px;
+			left:0px;
+			}
+		
+		.one:hover .er{
+			display:block;
+			
+			
+			
+			}
+		.one:hover .san{
+			display:none;
+			
+			
+			
+			}	
+		.two:hover .san{
+			display:block;
+			}
+		.san{
+			position:absolute;
+			top:127px;
+			left:150px;
+			}		
+				
+
+</style>
+</head>
+
+<body>
+	
+     <ul class="yi">
+     	<li class="one">一级菜单
+        	 <ul class="er">
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+               	<li>二级菜单</li>
+                <li class="two">二级菜单
+                    <ul class="san">
+                <li>三级菜单</li>
+                <li>三级菜单</li>
+                <li>三级菜单</li>
+               	<li>三级菜单</li>
+                <li class="two">二级菜单</li>
+             </ul>
+                </li>
+             </ul>
+        </li>
+        
+        <li>一级菜单</li>
+        <li>一级菜单</li>
+        <li>一级菜单</li>
+        <li>一级菜单</li>
+     </ul>
+    	
+    	
+   
+    
+</body>
+</html>

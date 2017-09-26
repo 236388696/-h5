@@ -1,0 +1,8 @@
+@charset "utf-8";
+div{
+	width:1000px;
+	height:600px;
+	background-color:#3FF;
+	border:15px  solid #C9F;
+	font-size:30px;
+	}

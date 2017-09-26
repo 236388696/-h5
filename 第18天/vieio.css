@@ -1,0 +1,182 @@
+/*
+* @Author: Marte
+* @Date:   2017-08-29 18:07:01
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-08-29 20:28:01
+*/
+@charset "utf-8";
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: Tahoma Arial;
+}
+body{
+
+}
+
+.box{
+    height:100%;
+   display:flex;
+   flex-direction:column;
+   box-sizing: border-box;
+}
+header{
+    width:100%;
+    height:44px;
+    background: #0dc441;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul{
+    width:118px;
+    height:22.5px;
+    display:flex;
+
+}
+header ul li{
+     width:50%;
+    line-height:22.5px;
+    text-align: center;
+
+}
+header ul a{
+    color: white;
+}
+header ul li:nth-of-type(1){
+    width:50%;
+    background:#64d985;
+    border-radius: 12px 0px  0px  12px;
+}
+header ul li:nth-of-type(2){
+    width:50%;
+   background:#3dd067;
+
+    border-radius: 0px 12px  12px  0px;
+}
+nav{
+    width:100%;
+    height:35.5px;
+    border: 1px solid #e3e3e3;
+    display:flex;
+
+}
+nav ul{
+    display:flex;
+    flex-direction:row;
+    line-height:35.5px;
+    width:100%;
+    text-align:center;
+}
+nav ul li{
+   flex:1;
+
+}
+nav ul li a{
+   color:#666;
+
+}
+
+nav ul li:nth-of-type(1){
+    border-bottom: 2px solid #3dd067;
+
+
+}
+.green{
+  color:#3dd067;
+}
+
+
+section{
+    width:100%;
+    flex:1;
+    display:flex;
+    overflow: auto;
+
+
+}
+section ul{
+    display:flex;
+    flex-wrap:wrap;
+    padding:5px 0px 0px 0;
+
+}
+section ul li{
+    width:48%;
+    border:1px solid #eee;
+    margin-top:5px ;
+}
+section ul li:nth-of-type(1){
+    margin-top:5px ;
+    margin-right: 5px ;
+
+}
+section ul li img{
+    width:100%;
+    border-bottom:1px solid #eee;
+
+}
+section ul p{
+    height:30px;
+    line-height:30px;
+    padding-left: 10px;
+
+
+}
+footer{
+    width:100%;
+    height:44px;
+    // background: #ccc;
+    display:flex;
+     line-height:44px;
+
+
+
+}
+footer ul {
+     display:flex;
+     width:100%;
+     height:100%;
+     line-height:22px;
+     // flex-direction:row;
+     justify-content:center;
+
+}
+footer ul li{
+     display:flex;
+     flex-direction:column;
+     flex:1;
+     // height:44px;
+     // line-height:44px;
+     text-align:center;
+
+
+}
+footer ul li i{
+     width:52px;
+     height:52px;
+     border:1px solid gray;
+     border-radius:50%;
+     display:block;
+     position:relative;
+     bottom:20px;
+     display:block;
+     font-size:30px;
+     display:flex;
+     justify-content:center;
+      align-items:center;
+
+
+
+}
+footer ul li i .iconfont{
+
+
+
+}
+footer ul li:nth-of-type(3) div{
+
+
+
+}
+

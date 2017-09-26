@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{
+		width: 720px;
+			height: 720px;
+			margin: 0 auto;
+			position: relative;
+			animation:mymove 20s infinite;
+	}
+		.img1{
+			width: 720px;
+			height: 720px;
+
+		}
+		.img2{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left:320px;
+			top: 30px;
+			animation:dog 20s infinite;
+			transform-origin:50% top; 
+		}
+		@keyframes mymove{
+		from{}
+		to{transform:rotateZ(360deg);}
+		}
+		@keyframes dog{
+		from{}
+		to{transform:rotateZ(-360deg);}
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+	<img class="img1" src="images2/fsw.png" alt="">
+	<img class="img2" src="images2/dog.png" alt="">
+	</div>
+</body>
+</html>

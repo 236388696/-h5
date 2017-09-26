@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>第12</title>
+</head>
+
+<body>
+<h2>一、表单高级</h2>
+<h2>表单的作用：用来收集用户的信息的;</h2>
+<h2>表单的组成：</h2>
+<h2>表单域&lt;form name=&quot;&quot; method=&quot;&quot; action=&quot;&quot;&gt;&lt;/form&gt;</h2>
+<h2>表单控件&lt;input type=&quot;text&quot; value=&quot;&quot;/&gt;</h2>
+<h2>提示信息`</h2>
+<h2>&nbsp;</h2>
+<p>&nbsp;</p>
+<h2>1)表单字段集</h2>
+<h2>&lt;fieldset&gt;&lt;/fieldset&gt;</h2>
+<h2>功能：相当于一个方框，在字段集中可以包含文本和其他元素。该元素用于对表单中的元素进行分组并在文档中区别标出文本。fieldset元素可以嵌套，在其内部可以在设置多个fieldset对象。</h2>
+<h2>2)字段级标题</h2>
+<h2>&lt;legend&gt;&lt;/legend&gt;</h2>
+<h2>功能：legend元素可以在fieldset对象绘制的方框内插入一个标题。legend元素必须是fieldset内的第一个元素。</h2>
+<h2>3)提示信息标签</h2>
+<h2>&lt;label for="绑定控件id名"&gt;&lt;/label&gt;</h2>
+<h2>功能：label元素用来定义标签，为页面上的其他元素指定提示信息。要将label元素绑定到其他的控件上，可以将label元素的for属性设置为与该控件的id属性值相同。</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>4)表单元素</h2>
+<h2>1）上传文件框 </h2>
+<h2>文件域：&lt;input type="file" /&gt;</h2>
+<h2>2）图像域</h2>
+<h2>&lt;input type="image" src=&quot;&quot; width="100" height="100"  alt="上传图片"   /&gt;</h2>
+<h2>CSS 属性</h2>
+<h2>resize:none/both/horizontal/vertical;</h2>
+<h2>是否 允许用户调整大小</h2>
+<h2>none:不允许；</h2>
+<h2>both：允许</h2>
+<h2>horizontal:允许调整宽度</h2>
+<h2> vertical:允许调整高度</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p></p>
+<h2>1、表格的作用：显示数据;</h2>
+<h2>（一）关于表格的CSS属性</h2>
+<h2>1、单元格间距(该属性必须给table添加)</h2>
+<h2>border-spacing:value;</h2>
+<h2>2、合并相邻单元格边框</h2>
+<h2>border-collapse:separate(边框分开)/collapse(边框合并)；</h2>
+<h2>3、无内容单元格显示、隐藏</h2>
+<h2>empty-cells:show/hide;</h2>
+<h2>4、表格布局算法</h2>
+<h2>table-layout:auto/fixed(固定宽度，不会随内容多少改变单元格宽度）</h2>
+<h2><strong>自动表格布局</strong>：列的宽度是由列单元格中没有折行的最宽的内容设定的。</h2>
+<h2>缺点：较慢（因为它需要在确定最终的布局前访问表格中的所有内容）。</h2>
+<h2>优点：灵活</h2>
+<h2>固定表格布局</h2>
+<h2>优点：加快运行的速度,允许浏览器更快的对表格进行布局。</h2>
+<h2>缺点:不太灵活</h2>
+<p>&nbsp;</p>
+<h2>5、表格标题</h2>
+<h2>&lt;caption&gt;标题内容&lt;/caption&gt;</h2>
+<h2>caption:表格标题</h2>
+<h2>表格标题位置：caption-side:top/right/bottom/left</h2>
+<h2>说明：left,right位置只有火狐识别，top,bottom IE7上版本支持，ie7以下版本不支持其它属性值，只识别top</h2>
+<h2>th:表格列标题（放在tr里）</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>6、数据行分组</h2>
+<h2>&lt;thead&gt;&lt;/thead&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表头</h2>
+<h2>&lt;tbody&gt;&lt;/tbody&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表体</h2>
+<h2>&lt;tfoot&gt;&lt;/tfoot&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表尾</h2>
+<h2>说明：一个Table中，只能包含一个thead,一个tfoot,但可包含多个tbody。</h2>
+<h2>7、数据列分组</h2>
+<h2>&lt;colgroup span=&quot;value&quot;&gt;&lt;/colgroup&gt;</h2>
+<h2>&lt;col&nbsp;&nbsp;&nbsp; span=&quot;value&quot; /&gt;</h2>
+<h2>说明：</h2>
+<h2>1）col和colgroup元素会根据从左到右的顺序依次对数据表格进行分组。</h2>
+<h2>2）span属性显示指定相邻几列组成一组，span属性值默认为1，默认时仅定义一列为一组。</h2>
+<h2>3）可以通过给table添加rules=&quot;groups&quot;属性来给分组列添加组分割线。</h2>
+<h2>注意：虽然col和colgroup具有相同的功能但col不支持组分隔线。</h2>
+<h2>8、表格布局元素</h2>
+<h2>1、表格基本组成</h2>
+<h2>table（表格）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tr（行） &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td（列）</h2>
+<h2>th:表格列标题（放在tr里）</h2>
+<h2>重要属性：</h2>
+<h2>1）、colspan=&quot;value&quot;&nbsp;&nbsp;&nbsp;&nbsp;合并列</h2>
+<h2>2）、rowspan=&quot;value&quot;&nbsp;&nbsp;&nbsp;和并行</h2>
+<h2>水平对齐：align:left/center/right</h2>
+<h2>3）、valign=&quot;top/bottom/middle/baseline&quot; 垂直对齐方式&nbsp;</h2>
+<h2>４）rules=&quot;groups/rows/cols/all/none&quot;&nbsp;&nbsp;&nbsp;&nbsp;添加组分隔线</h2>
+<h2>说明：</h2>
+<h2>rows:位于行之间的线条</h2>
+<h2>cols:位于列之间的线条</h2>
+<h2>all：位于行和列之间的线条</h2>
+<h2>none:没有线条</h2>
+<h2>groups:位于行组和列组之间的线条</h2>
+<h2>&nbsp;</h2>
+<h2>&nbsp;</h2>
+<h2>&nbsp;</h2>
+<h2>&nbsp;</h2>
+<h2><STRONG>三、CSS 滤镜</STRONG></h2>
+<h2>&nbsp;&nbsp;&nbsp;A.图片背景透明：</h2>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.gif：支持</h2>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.png8：支持(建议使用)</h2>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.png24:IE6不支持，其它内核浏览器支持（PS制作)</h2>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.png32：IE6不支持，其它内核浏览器支持</h2>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;B.图片本身透明</h2>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.png24:IE6不支持（ps制作)，可用filter兼容。</h2>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.png32：IE6不支持，可用filter兼容。</h2>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;半透明插入图片兼容IE6做法:（使用png32或PS制作的png24半透明图片）：</h2>
+<h2>&nbsp;样式：</h2>
+<h2>&lt;style type="text/css"&gt;</h2>
+<h2>.alpha{display:none;_display:inline-block;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader</h2>
+<h2>(src="图片路径",sizingMethod="scale");width:value;height:value;}</h2>
+<h2>.ie6hidden{_display:none;}</h2>
+<h2>&lt;/style&gt;</h2>
+<h2>&nbsp;</h2>
+<h2>结构：</h2>
+<h2>&lt;span class="alpha"&gt;&lt;/span&gt;</h2>
+<h2>&lt;img class="ie6hidden" src="" /&gt;</h2>
+<h2>&nbsp;</h2>
+</body>
+</html>

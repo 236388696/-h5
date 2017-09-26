@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="../reset.css">
+    <style type="text/css" >
+    /* 小居于父居中 */
+    /**.box1{
+        width:800px;
+        height:800px;
+        border:2px solid red;
+        display:table-cell;
+        text-align:center;
+        vertical-align:middle;
+    }
+        .box{
+            width:200px;
+            height:200px;
+            background:yellow;
+            display:inline-block;
+        }**/
+
+      /* 小定位父居中 */
+
+       .box1{
+        width:1;
+        height:800px;
+        border:2px solid red;
+        position:relative;
+       }
+        .box{
+            width:200px;
+            height:200px;
+            position:absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            background:yellow;
+            margin:auto;
+
+        }
+
+
+         /* 小定位窗口居中 */
+       /** .box{
+            width:200px;
+            height:200px;
+            position:fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            background:yellow;
+            margin:auto;
+
+        } **/
+
+     /* span*/
+       /* .box1{
+        width:800px;
+        height:800px;
+        border:2px solid red;
+        text-align:center;
+
+
+
+    }
+        .box{
+            width:200px;
+            height:200px;
+            background:yellow;
+            display:inline-block;
+             vertical-align:middle;
+
+        }
+        .box1 span{
+            width:10px;
+            height:100%;
+            background:gray;
+            display:inline-block;
+            vertical-align:middle;
+
+        }*/
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="box"></div>
+    <span></span>
+</div>
+
+
+</body>
+</html>

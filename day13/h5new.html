@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    body{
+        width:100%;
+        height:100%;
+        background:#eee;
+
+    }
+    main{
+        width:900px;
+
+        border:3px solid white;
+        margin:50px auto;
+    }
+    main>section{
+        width:880px;
+
+        background:#888;
+        padding:10px;
+        overflow:hidden;
+    }
+    main>header,footer{
+        width:100%;
+        height:96px;
+        background:#f47d31;
+        text-align:center;
+        line-height:96px;
+        font-size:24px;
+        color:white;
+        font-weight:bold;
+    }
+    nav{
+        width:25%;
+
+        float: left;
+
+    }
+    nav ul{
+        padding-right:10px;
+    }
+
+    nav>header{
+     color:white;
+     text-align:center;
+     font-weight:bold;
+    }
+    nav li{
+        color:#f47d31;
+        height:40px;
+        line-height:40px;
+        border-bottom:2px solid white;
+        padding-left:8px;
+        list-style:none;
+
+    }
+    section>section{
+         width:50%;
+         float: left;
+
+    }
+    section>article{
+         background:#eee;
+        padding:10px;
+        margin-bottom:20px;
+
+
+    }
+     article header{
+        height:32px;
+        line-height:32px;
+         background:#f47d31;
+         text-align:center;
+         color:white;
+         font-weight:bold;
+
+    }
+    section>article p{
+        line-height:20px;
+        padding:10px;
+
+    }
+    main section>aside{
+        width:25%;
+        float: right;
+     }
+    main section>aside header{
+      text-align:center;
+         color:white;
+         font-weight:bold;
+    }
+    aside p{
+      line-height:20px;
+      color:white;
+         font-weight:bold;
+         padding:10px;
+         font-style:italic;
+
+
+
+    }
+    </style>
+
+</head>
+<body>
+
+ <form action="" method="get" >
+        <input type="text" list="url_list" name="link" />
+<datalist id="url_list">
+  <option label="2" value="那一夜" />
+  <option label="Google" value="我们" />
+  <option label="4" value="有一天" />
+</datalist
+     </form>
+    <br/>
+     <input name="number1" type="range" value="25" min="10" max="100" step="5" />
+     <input name="number1" type="number" value="25" min="10" max="100" step="5" />
+     <input type="submit" name="" value="提交">
+
+
+
+
+
+    <hr/>
+    <main>
+        <header id="header" class="">
+        Header
+        </header>
+    <section>
+        <nav>
+            <header id="header" class="">
+            Nav
+            </header>
+            <ul>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <header id="header" class="">
+                    Article Header
+                </header><!-- /header -->
+                <p>Lorem ipsum dolor HTML5 nunc aut nunquam sit amet, consectetur adipiscing elit. Vivamus at est eros, vel fringilla urna.</p>
+                <p>Per inceptos himenaeos. Quisque feugiat, justo at vehicula pellentesque, turpis lorem dictum nunc</p>
+                <header id="header" class="">
+                    Article Footer
+                </header><!-- /header -->
+
+            </article>
+            <article>
+                <header id="header" class="">
+                    Article Header
+                </header><!-- /header -->
+                <p>HTML5: "Lorem ipsum dolor nunc aut nunquam sit amet, consectetur adipiscing elit. Vivamus at est eros, vel fringilla urna. Pellentesque odio</p>
+                <header id="header" class="">
+                    Article Footer
+                </header><!-- /header -->
+
+            </article>
+        </section>
+        <aside>
+            <header id="header" class="">
+                  aside
+            </header><!-- /header -->
+            <p>
+                <mark>HTML5</mark>: "Lorem ipsum dolor nunc aut nunquam sit amet, consectetur adipiscing elit. Vivamus at est eros, vel fringilla urna. Pellentesque odio rhoncus
+            </p>
+        </aside>
+     </section>
+     <footer>
+         FOOTER
+     </footer>
+    </main>
+
+</body>
+</html>

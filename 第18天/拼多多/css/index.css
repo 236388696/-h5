@@ -1,0 +1,136 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{background: #f2f2f2;}
+body,html{height: 100%;overflow: hidden;}
+html{font-size: 26.66vw;}
+#content{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+header{
+	height: 0.495rem;
+	background: #e02e24;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	color: #fff;
+
+}
+nav{
+	height: 0.4rem;
+	background: #fff;
+	overflow-x: auto;
+}
+nav ul{
+	height: 100%;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 0.16rem;
+
+}
+nav ul li{
+
+	height: 100%;
+	color: #363636;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	padding-left:10px;
+
+}
+nav li a{width: 0.285rem;}
+nav ul li:nth-of-type(1){
+	border-bottom: 5px solid #e02e24;
+	color: #e02e24;
+}
+section{
+	flex: 1;
+	overflow-y:auto;
+}
+.banner{
+	height: 1.4rem;
+	background: url(../images/banner.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.nav{
+	background: #fff;
+}
+.nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	overflow: hidden;
+	padding: 0.15rem;
+}
+.nav li{
+	text-align: center;
+	padding-bottom: 0.16rem;
+	width: 20%;
+	height: 100%;
+}
+.nav li p{
+	padding-top: 0.07rem;
+
+}
+.nav ul img{
+	width: 0.315rem;
+	height: 0.29rem;
+}
+.shop{
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+	background: #fff;
+	margin-top: 0.08rem;
+}
+.shop ul li{
+	padding-bottom: 0.15rem;
+}
+.shop img{
+	width: 2.82rem;
+	height: 1.61rem;
+}
+.shop p{
+	padding-top: 0.32rem;
+	text-align: left;
+}
+.shop p span{
+	padding-left: 0.115rem;
+}
+footer{
+	height: 0.495rem;
+	background: #f9f9f9;
+	padding:0 0.25rem;
+	border-top: 0.01rem solid #e0e0e0;
+}
+footer ul{
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+footer ul li{
+	text-align: center;
+	color: #666;
+}
+footer ul li:nth-of-type(1){
+	color: #e02e24;
+
+}

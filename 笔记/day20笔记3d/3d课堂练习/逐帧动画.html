@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div ul li{
+			list-style: none;
+			width: 150px;
+			height: 150px;
+			background: url(images/other1-t.jpg) no-repeat 0px 0px;
+			border:1px solid #000;
+			transition: 0.5s 0.1s;
+			transition-timing-function: steps(10);
+		}
+		li:hover{
+			background-position:0px -1500px;
+			transition-timing-function: steps(10);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>
